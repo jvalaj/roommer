@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, KeyboardAvo
 import { router } from 'expo-router';
 import { Mail, Lock, User, School, ArrowRight } from 'lucide-react-native';
 import { signUp } from '../../lib/authService'; // <-- Import the Firebase signup function
-
+import logo from '../../assets/logo.png';
 export default function SignupScreen() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -40,7 +40,7 @@ export default function SignupScreen() {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.header}>
           <Image 
-            source={{ uri: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop' }} 
+            source={logo} 
             style={styles.logo}
           />
           <Text style={styles.title}>Create Account</Text>
@@ -124,7 +124,7 @@ export default function SignupScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   scrollContainer: {
     flexGrow: 1,
@@ -172,13 +172,14 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 50,
     fontSize: 16,
+    color: 'white'
   },
   errorText: {
     color: '#FF5864',
     marginBottom: 16,
   },
   signupButton: {
-    backgroundColor: '#FF5864',
+    backgroundColor: '#F1D061',
     borderRadius: 8,
     height: 50,
     flexDirection: 'row',

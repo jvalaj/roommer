@@ -30,9 +30,7 @@ export default function ProfileScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Profile</Text>
-        <TouchableOpacity style={styles.settingsButton}>
-          <Settings size={24} color="#333" />
-        </TouchableOpacity>
+        
       </View>
 
       <ScrollView style={styles.content}>
@@ -125,10 +123,10 @@ export default function ProfileScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#f8f8f8' },
+  container: { flex: 1, backgroundColor: '#black' },
   header: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center',
-    paddingTop: 50, paddingHorizontal: 20, paddingBottom: 10, backgroundColor: '#fff',
+    paddingTop: 50, paddingHorizontal: 20, paddingBottom: 10, backgroundColor: '#000',
     borderBottomWidth: 1, borderBottomColor: '#eee',
   },
   headerTitle: { fontSize: 24, fontWeight: 'bold', color: '#FF5864' },

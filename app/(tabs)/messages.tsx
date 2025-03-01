@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingHorizontal: 20,
     paddingBottom: 10,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   headerTitle: {
     fontSize: 24,
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     padding: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
   },

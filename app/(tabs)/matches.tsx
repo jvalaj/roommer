@@ -70,9 +70,7 @@ export default function MatchesScreen() {
         <Text style={styles.matchDate}>Matched {item.matchDate}</Text>
       </View>
       <View style={styles.matchActions}>
-        <View style={styles.compatibilityBadge}>
-          <Text style={styles.compatibilityText}>{item.compatibility}%</Text>
-        </View>
+       
         <TouchableOpacity 
           style={styles.messageButton}
           onPress={() => navigateToMessages(item)}
@@ -144,7 +142,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   headerTitle: {
     fontSize: 24,
@@ -216,7 +214,7 @@ const styles = StyleSheet.create({
     color: '#FF5864',
   },
   messageButton: {
-    backgroundColor: '#FF5864',
+    backgroundColor: '#F1D061',
     width: 36,
     height: 36,
     borderRadius: 18,
@@ -225,7 +223,7 @@ const styles = StyleSheet.create({
   },
   pendingMatchItem: {
     flexDirection: 'row',
-    backgroundColor: '#fff',
+    backgroundColor: '#8EB1C7',
     borderRadius: 12,
     padding: 15,
     marginBottom: 15,

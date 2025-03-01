@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { Link, router } from 'expo-router';
 import { LogIn, Mail, Lock, ArrowRight } from 'lucide-react-native';
+import logo from '../../assets/logo.png';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
@@ -32,7 +33,7 @@ export default function LoginScreen() {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.header}>
           <Image 
-            source={{ uri: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop' }} 
+            source={logo} 
             style={styles.logo}
           />
           <Text style={styles.title}>roommer.</Text>
@@ -41,7 +42,7 @@ export default function LoginScreen() {
 
         <View style={styles.formContainer}>
           <View style={styles.inputContainer}>
-            <Mail size={20} color="#E76F51" style={styles.inputIcon} />
+            <Mail size={20} color="#FF5864" style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Email"
@@ -53,7 +54,7 @@ export default function LoginScreen() {
           </View>
 
           <View style={styles.inputContainer}>
-            <Lock size={20} color="#E76F51" style={styles.inputIcon} />
+            <Lock size={20} color="#FF5864" style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Password"
@@ -87,7 +88,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1A2F38',
+    backgroundColor: '#000',
   },
   scrollContainer: {
     flexGrow: 1,
@@ -108,11 +109,11 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#2A9D8F',
+    color: '#FF5864',
   },
   subtitle: {
     fontSize: 16,
-    color: '#F4A261',
+    color: '#59564a',
     textAlign: 'center',
   },
   formContainer: {
@@ -134,13 +135,14 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 50,
     fontSize: 16,
+    color: 'white'
   },
   errorText: {
-    color: '#E9C46A',
+    color: '#FF5864',
     marginBottom: 16,
   },
   loginButton: {
-    backgroundColor: '#2A9D8F',
+    backgroundColor: '#F1D061',
     borderRadius: 8,
     height: 50,
     flexDirection: 'row',
@@ -163,7 +165,12 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   signupLink: {
-    color: '#E9C46A',
+    color: '#FF5864',
     fontWeight: 'bold',
   },
 });
+
+//orange: EB4511
+//yellow:F1D061
+//blue: 8EB1C7
+//grey: 59564A

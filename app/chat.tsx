@@ -2,7 +2,10 @@ import { useState, useRef, useEffect } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList, Image, KeyboardAvoidingView, Platform } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { ArrowLeft, Send, Info } from 'lucide-react-native';
-
+import ady from '../../assets/images/ady.jpg';
+import gg from '../../assets/images/g.jpg';
+import k from '../../assets/images/k.jpg';
+import t from '../../assets/images/t.jpg';
 // Sample messages data
 const SAMPLE_MESSAGES = [
   {
@@ -16,25 +19,7 @@ const SAMPLE_MESSAGES = [
     text: 'Hey! Nice to meet you. I was impressed by your profile. What are you looking for in a roommate?',
     sender: 'me',
     timestamp: '10:32 AM',
-  },
-  {
-    id: '3',
-    text: 'I\'m looking for someone who is clean, respectful of quiet hours during weeknights, and doesn\'t mind occasional guests.',
-    sender: 'other',
-    timestamp: '10:35 AM',
-  },
-  {
-    id: '4',
-    text: 'That sounds perfect! I\'m pretty tidy and usually study in the evenings. Are you looking for a place near campus?',
-    sender: 'me',
-    timestamp: '10:38 AM',
-  },
-  {
-    id: '5',
-    text: 'Yes, ideally within walking distance. I\'ve been looking at a few apartments in the University Heights area. Have you seen any good places?',
-    sender: 'other',
-    timestamp: '10:40 AM',
-  },
+  }
 ];
 
 export default function ChatScreen() {
@@ -75,7 +60,7 @@ export default function ChatScreen() {
       item.sender === 'me' ? styles.myMessageContainer : styles.otherMessageContainer
     ]}>
       {item.sender === 'other' && (
-        <Image source={{ uri: image as string }} style={styles.avatar} />
+        <Image source={ image as string } style={styles.avatar} />
       )}
       <View style={[
         styles.messageBubble,
@@ -100,15 +85,13 @@ export default function ChatScreen() {
     >
       <View style={styles.header}>
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-          <ArrowLeft size={24} color="#333" />
+          <ArrowLeft size={24} color="#fff" />
         </TouchableOpacity>
         <View style={styles.headerInfo}>
           <Image source={{ uri: image as string }} style={styles.headerAvatar} />
           <Text style={styles.headerName}>{name}</Text>
         </View>
-        <TouchableOpacity style={styles.infoButton}>
-          <Info size={24} color="#333" />
-        </TouchableOpacity>
+       
       </View>
 
       <FlatList
@@ -150,7 +133,7 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === 'ios' ? 50 : 30,
     paddingBottom: 10,
     paddingHorizontal: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
   },
@@ -172,6 +155,7 @@ const styles = StyleSheet.create({
   headerName: {
     fontSize: 18,
     fontWeight: 'bold',
+    color:'#FF5864'
   },
   infoButton: {
     padding: 5,
@@ -227,8 +211,9 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flexDirection: 'row',
-    padding: 10,
-    backgroundColor: '#fff',
+    padding:20,
+    marginBottom:0,
+    backgroundColor: '#FF5864',
     borderTopWidth: 1,
     borderTopColor: '#eee',
   },

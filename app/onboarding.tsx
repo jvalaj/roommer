@@ -227,7 +227,7 @@ export default function OnboardingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#8EB1C7',
   },
   header: {
     paddingTop: Platform.OS === 'ios' ? 50 : 30,
@@ -385,7 +385,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#fff',
+    backgroundColor: '#8EB1C7',
     borderTopWidth: 1,
     borderTopColor: '#eee',
     paddingVertical: 15,

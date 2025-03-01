@@ -1,8 +1,21 @@
 import { useState, useRef } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Animated, PanResponder, Dimensions } from 'react-native';
 import { Heart, X, Star, Filter } from 'lucide-react-native';
-
+import ady from '../../assets/images/ady.jpg';
+import gg from '../../assets/images/g.jpg';
+import k from '../../assets/images/k.jpg';
+import t from '../../assets/images/t.jpg';
 // Sample data for potential roommates
+
+function renderImage(image: string | number) {
+  if (typeof image === 'string') {
+    return { uri: image };   // Remote URL
+  } else {
+    return image;            // Local file
+  }
+}
+
+
 const ROOMMATES = [
   {
     id: '1',
@@ -12,7 +25,7 @@ const ROOMMATES = [
     major: 'Computer Science',
     year: 'Junior',
     bio: 'Early riser who loves to keep things tidy. I enjoy hiking on weekends and quiet study sessions during the week.',
-    images: ['https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop'],
+    images: ady,
     lifestyle: ['Early Bird', 'Neat', 'Studious', 'Active'],
   },
   {
@@ -23,7 +36,7 @@ const ROOMMATES = [
     major: 'Economics',
     year: 'Sophomore',
     bio: 'Easygoing and social. I play basketball and like to host small gatherings occasionally. Looking for a roommate who is respectful but also fun.',
-    images: ['https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop'],
+    images: t,
     lifestyle: ['Social', 'Active', 'Foodie', 'Night Owl'],
   },
   {
@@ -34,7 +47,7 @@ const ROOMMATES = [
     major: 'Psychology',
     year: 'Senior',
     bio: 'Quiet bookworm who enjoys cooking and occasional Netflix binges. I keep to myself but am always up for a good conversation.',
-    images: ['https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop'],
+    images: k,
     lifestyle: ['Quiet', 'Homebody', 'Foodie', 'Neat'],
   },
   {
@@ -45,7 +58,7 @@ const ROOMMATES = [
     major: 'Engineering',
     year: 'Junior',
     bio: 'Engineering student who spends most of my time in the lab. I\'m clean, quiet, and respectful of shared spaces.',
-    images: ['https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop'],
+    images: gg,
     lifestyle: ['Studious', 'Quiet', 'Neat', 'Early Bird'],
   },
 ];
@@ -159,7 +172,7 @@ export default function DiscoverScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>roommer</Text>
+        <Text style={styles.headerTitle}>roommer.</Text>
        
       </View>
 
@@ -174,7 +187,7 @@ export default function DiscoverScreen() {
               },
             ]}
           >
-            <Image source={{ uri: nextItem.images[0] }} style={styles.cardImage} />
+            <Image source={nextItem.images} style={styles.cardImage} />
             <View style={styles.cardContent}>
               <View style={styles.cardHeader}>
                 <Text style={styles.cardName}>{nextItem.name}, {nextItem.age}</Text>
@@ -215,7 +228,7 @@ export default function DiscoverScreen() {
             <Text style={styles.dislikeLabelText}>NOPE</Text>
           </Animated.View>
 
-          <Image source={{ uri: currentItem.images[0] }} style={styles.cardImage} />
+          <Image source={currentItem.images} style={styles.cardImage} />
           <View style={styles.cardContent}>
             <View style={styles.cardHeader}>
               <Text style={styles.cardName}>{currentItem.name}, {currentItem.age}</Text>
@@ -240,9 +253,7 @@ export default function DiscoverScreen() {
         <TouchableOpacity style={styles.button} onPress={swipeLeft}>
           <X size={30} color="#FF5864" />
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button, styles.starButton]}>
-          <Star size={30} color="#3498db" />
-        </TouchableOpacity>
+       
         <TouchableOpacity style={styles.button} onPress={swipeRight}>
           <Heart size={30} color="#4CD964" />
         </TouchableOpacity>
@@ -254,7 +265,7 @@ export default function DiscoverScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f8f8f8',
+    backgroundColor: 'black',
   },
   header: {
     flexDirection: 'row',
@@ -349,7 +360,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: 'white',
+    backgroundColor: '#59564A',
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
