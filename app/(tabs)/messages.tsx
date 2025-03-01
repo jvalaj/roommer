@@ -2,13 +2,16 @@ import { useState } from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity, TextInput } from 'react-native';
 import { Search, ChevronRight } from 'lucide-react-native';
 import { router } from 'expo-router';
-
+import ady from '../../assets/images/ady.jpg';
+import gg from '../../assets/images/g.jpg';
+import k from '../../assets/images/k.jpg';
+import t from '../../assets/images/t.jpg';
 // Sample data for conversations
 const CONVERSATIONS = [
   {
     id: '1',
     name: 'Adyatan Dagar',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop',
+    image: ady,
     lastMessage: 'the texting feature is pretty cool',
     timestamp: '10:30 AM',
     unread: 0,
@@ -16,7 +19,7 @@ const CONVERSATIONS = [
   {
     id: '2',
     name: 'Anthony Martini',
-    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop',
+    image: t,
     lastMessage: 'Welcome to roommer Jvalaj!',
     timestamp: 'Yesterday',
     unread: 0,
@@ -24,7 +27,7 @@ const CONVERSATIONS = [
   {
     id: '3',
     name: 'Kabir Sheikh',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop',
+    image: k,
     lastMessage: 'test...message sent!',
     timestamp: '2 days ago',
     unread: 0,
@@ -51,7 +54,7 @@ export default function MessagesScreen() {
       onPress={() => navigateToChat(item)}
     >
       <View style={styles.avatarContainer}>
-        <Image source={{ uri: item.image }} style={styles.avatar} />
+        <Image source={item.image} style={styles.avatar} />
         {item.unread > 0 && (
           <View style={styles.unreadBadge}>
             <Text style={styles.unreadBadgeText}>{item.unread}</Text>

@@ -7,13 +7,6 @@ import k from '../../assets/images/k.jpg';
 import t from '../../assets/images/t.jpg';
 // Sample data for potential roommates
 
-function renderImage(image: string | number) {
-  if (typeof image === 'string') {
-    return { uri: image };   // Remote URL
-  } else {
-    return image;            // Local file
-  }
-}
 
 
 const ROOMMATES = [

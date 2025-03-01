@@ -60,7 +60,7 @@ export default function ChatScreen() {
       item.sender === 'me' ? styles.myMessageContainer : styles.otherMessageContainer
     ]}>
       {item.sender === 'other' && (
-        <Image source={ image as string } style={styles.avatar} />
+        <Image source={image} style={styles.avatar} />
       )}
       <View style={[
         styles.messageBubble,
@@ -88,7 +88,7 @@ export default function ChatScreen() {
           <ArrowLeft size={24} color="#fff" />
         </TouchableOpacity>
         <View style={styles.headerInfo}>
-          <Image source={{ uri: image as string }} style={styles.headerAvatar} />
+          <Image source={image} style={styles.headerAvatar} />
           <Text style={styles.headerName}>{name}</Text>
         </View>
        
