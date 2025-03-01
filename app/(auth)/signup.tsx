@@ -44,7 +44,7 @@ export default function SignupScreen() {
             style={styles.logo}
           />
           <Text style={styles.title}>Create Account</Text>
-          <Text style={styles.subtitle}>Join RoomieMatch and find your perfect roommate</Text>
+          <Text style={styles.subtitle}>Join roommer and find your perfect roommate</Text>
         </View>
 
         <View style={styles.formContainer}>

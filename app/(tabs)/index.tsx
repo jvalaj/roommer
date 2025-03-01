@@ -159,7 +159,7 @@ export default function DiscoverScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>RoomieMatch</Text>
+        <Text style={styles.headerTitle}>roommer</Text>
         <TouchableOpacity style={styles.filterButton}>
           <Filter size={24} color="#FF5864" />
         </TouchableOpacity>

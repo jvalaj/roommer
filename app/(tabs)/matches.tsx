@@ -113,7 +113,7 @@ export default function MatchesScreen() {
       <View style={styles.content}>
         {PENDING_MATCHES.length > 0 && (
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Pending Requests ({PENDING_MATCHES.length})</Text>
+            <Text style={styles.sectionTitle}>Pending Requesabjddsts ({PENDING_MATCHES.length})</Text>
             <FlatList
               data={PENDING_MATCHES}
               renderItem={renderPendingMatchItem}
