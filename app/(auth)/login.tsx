@@ -30,7 +30,7 @@ export default function LoginScreen() {
             source={{ uri: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop' }} 
             style={styles.logo}
           />
-          <Text style={styles.title}>RoomieMatch</Text>
+          <Text style={styles.title}>roommer.</Text>
           <Text style={styles.subtitle}>Find your perfect college roommate</Text>
         </View>
 
@@ -82,7 +82,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#1A2F38',
   },
   scrollContainer: {
     flexGrow: 1,
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#FF5864',
+    color: '#2A9D8F',
   },
   subtitle: {
     fontSize: 16,
@@ -131,11 +131,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   errorText: {
-    color: '#FF5864',
+    color: '#E9C46A',
     marginBottom: 16,
   },
   loginButton: {
-    backgroundColor: '#FF5864',
+    backgroundColor: '#2A9D8F',
     borderRadius: 8,
     height: 50,
     flexDirection: 'row',
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   signupLink: {
-    color: '#FF5864',
+    color: '#E9C46A',
     fontWeight: 'bold',
   },
 });
