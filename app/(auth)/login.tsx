@@ -10,14 +10,19 @@ export default function LoginScreen() {
 
   const handleLogin = () => {
     if (!email || !password) {
-      setError('Please fill in all fields');
-      return;
+        setError('Please fill in all fields');
+        return;
     }
-    
+
+    if (!email.endsWith('.edu')) {
+        setError('Please use your .edu email address');
+        return;
+    }
+
     // In a real app, you would validate credentials against a backend
-    // For demo purposes, we'll just navigate to the main app
     router.replace('/(tabs)');
-  };
+};
+
 
   return (
     <KeyboardAvoidingView 

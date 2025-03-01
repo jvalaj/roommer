@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Switch, Alert } from 'react-native';
 import { router } from 'expo-router';
 import { CreditCard as Edit2, Settings, LogOut, Bell, Shield, CircleHelp as HelpCircle, ChevronRight } from 'lucide-react-native';
+import pfp from "../../assets/images/mypfp.jpg";
 
 export default function ProfileScreen() {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
@@ -37,12 +38,12 @@ export default function ProfileScreen() {
       <ScrollView style={styles.content}>
         <View style={styles.profileHeader}>
           <Image 
-            source={{ uri: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1000&auto=format&fit=crop' }} 
+            source={pfp} 
             style={styles.profileImage} 
           />
           <View style={styles.profileInfo}>
-            <Text style={styles.profileName}>Alex Morgan</Text>
-            <Text style={styles.profileUniversity}>Stanford University</Text>
+            <Text style={styles.profileName}>Jvalaj Pandey</Text>
+            <Text style={styles.profileUniversity}>University of South Florida</Text>
             <Text style={styles.profileMajor}>Computer Science • Junior</Text>
           </View>
           <TouchableOpacity style={styles.editButton}>
