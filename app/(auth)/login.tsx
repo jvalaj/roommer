@@ -36,7 +36,7 @@ export default function LoginScreen() {
 
         <View style={styles.formContainer}>
           <View style={styles.inputContainer}>
-            <Mail size={20} color="#666" style={styles.inputIcon} />
+            <Mail size={20} color="#E76F51" style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Email"
@@ -48,7 +48,7 @@ export default function LoginScreen() {
           </View>
 
           <View style={styles.inputContainer}>
-            <Lock size={20} color="#666" style={styles.inputIcon} />
+            <Lock size={20} color="#E76F51" style={styles.inputIcon} />
             <TextInput
               style={styles.input}
               placeholder="Password"
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    color: '#666',
+    color: '#F4A261',
     textAlign: 'center',
   },
   formContainer: {
