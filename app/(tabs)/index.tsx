@@ -6,9 +6,9 @@ import { Heart, X, Star, Filter } from 'lucide-react-native';
 const ROOMMATES = [
   {
     id: '1',
-    name: 'Sarah Johnson',
+    name: 'Adyatan Dagar',
     age: 20,
-    university: 'Stanford University',
+    university: 'University of South Florida',
     major: 'Computer Science',
     year: 'Junior',
     bio: 'Early riser who loves to keep things tidy. I enjoy hiking on weekends and quiet study sessions during the week.',
@@ -17,9 +17,9 @@ const ROOMMATES = [
   },
   {
     id: '2',
-    name: 'Michael Chen',
+    name: 'Anthony Martini',
     age: 19,
-    university: 'Stanford University',
+    university: 'University of South Florida',
     major: 'Economics',
     year: 'Sophomore',
     bio: 'Easygoing and social. I play basketball and like to host small gatherings occasionally. Looking for a roommate who is respectful but also fun.',
@@ -28,9 +28,9 @@ const ROOMMATES = [
   },
   {
     id: '3',
-    name: 'Emily Rodriguez',
+    name: 'Kabir Sheikh',
     age: 21,
-    university: 'Stanford University',
+    university: 'University of South Florida',
     major: 'Psychology',
     year: 'Senior',
     bio: 'Quiet bookworm who enjoys cooking and occasional Netflix binges. I keep to myself but am always up for a good conversation.',
@@ -39,9 +39,9 @@ const ROOMMATES = [
   },
   {
     id: '4',
-    name: 'James Wilson',
+    name: 'Gianna Gentille',
     age: 20,
-    university: 'Stanford University',
+    university: 'University of South Florida',
     major: 'Engineering',
     year: 'Junior',
     bio: 'Engineering student who spends most of my time in the lab. I\'m clean, quiet, and respectful of shared spaces.',
@@ -160,9 +160,7 @@ export default function DiscoverScreen() {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>roommer</Text>
-        <TouchableOpacity style={styles.filterButton}>
-          <Filter size={24} color="#FF5864" />
-        </TouchableOpacity>
+       
       </View>
 
       <View style={styles.cardContainer}>
