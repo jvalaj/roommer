@@ -20,10 +20,10 @@ const SAMPLE_MESSAGES = [
     sender: 'me',
     timestamp: '10:32 AM',
   },{
-    id: '1',
+    id: '11',
     text: 'How do you like roommer so far?',
     sender: 'other',
-    timestamp: '10:30 AM',
+    timestamp: '10:53 AM',
   }
 ];
 
