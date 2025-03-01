@@ -40,14 +40,15 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
 
 ## installation & Run
 
-git clone https://github.com/yourusername/roommer.git
-cd roommer
+-git clone https://github.com/yourusername/roommer.git
+-cd roommer
 
-npm install
-npm expo start
-npm run build:web
+-npm install
+-npm expo start
+-npm run build:web
 
-have expo go installed and scan the qr code shown in the terminal
+-have expo go installed
+-scan the qr code shown in the terminal
 
 ## contact
 
