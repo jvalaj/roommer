@@ -1,13 +1,16 @@
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
 import { MessageSquare } from 'lucide-react-native';
 import { router } from 'expo-router';
-
+import ady from '../../assets/images/ady.jpg';
+import gg from '../../assets/images/g.jpg';
+import k from '../../assets/images/k.jpg';
+import t from '../../assets/images/t.jpg';
 // Sample data for matches
 const MATCHES = [
   {
     id: '1',
     name: 'Adyatan Dagar',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop',
+    image: ady,
     university: 'University of South Florida',
     major: 'Computer Science',
     matchDate: '2 days ago',
@@ -16,7 +19,7 @@ const MATCHES = [
   {
     id: '2',
     name: 'Anthony Martini',
-    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop',
+    image: t,
     university: 'University of South Florida',
     major: 'Economics',
     matchDate: '1 week ago',
@@ -25,7 +28,7 @@ const MATCHES = [
   {
     id: '3',
     name: 'Kabir Sheikh',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop',
+    image: k,
     university: 'University of South Florida',
     major: 'Psychology',
     matchDate: '3 days ago',
@@ -34,24 +37,6 @@ const MATCHES = [
 ];
 
 // Sample data for pending matches
-const PENDING_MATCHES = [
-  {
-    id: '4',
-    name: 'Gianna Gentille',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop',
-    university: 'University of South Florida',
-    major: 'Engineering',
-    compatibility: 90,
-  },
-  {
-    id: '5',
-    name: 'Olivia Martinez',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop',
-    university: 'University of South Florida',
-    major: 'Business',
-    compatibility: 82,
-  },
-];
 
 export default function MatchesScreen() {
   const navigateToMessages = (match: any) => {
@@ -63,7 +48,7 @@ export default function MatchesScreen() {
 
   const renderMatchItem = ({ item }: { item: any }) => (
     <TouchableOpacity style={styles.matchItem} onPress={() => navigateToMessages(item)}>
-      <Image source={{ uri: item.image }} style={styles.matchImage} />
+      <Image source={ item.image } style={styles.matchImage} />
       <View style={styles.matchInfo}>
         <Text style={styles.matchName}>{item.name}</Text>
         <Text style={styles.matchDetails}>{item.major} • {item.university}</Text>
@@ -83,7 +68,7 @@ export default function MatchesScreen() {
 
   const renderPendingMatchItem = ({ item }: { item: any }) => (
     <TouchableOpacity style={styles.pendingMatchItem}>
-      <Image source={{ uri: item.image }} style={styles.pendingMatchImage} />
+      <Image source={ item.image } style={styles.pendingMatchImage} />
       <View style={styles.pendingMatchInfo}>
         <Text style={styles.pendingMatchName}>{item.name}</Text>
         <Text style={styles.pendingMatchDetails}>{item.major}</Text>
