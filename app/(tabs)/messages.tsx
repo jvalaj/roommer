@@ -23,15 +23,7 @@ const CONVERSATIONS = [
     lastMessage: 'Welcome to roommer Jvalaj!',
     timestamp: 'Yesterday',
     unread: 0,
-  },
-  {
-    id: '3',
-    name: 'Kabir Sheikh',
-    image: k,
-    lastMessage: 'test...message sent!',
-    timestamp: '2 days ago',
-    unread: 0,
-  },
+  }
 ];
 
 export default function MessagesScreen() {
