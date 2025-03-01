@@ -12,16 +12,8 @@ const CONVERSATIONS = [
     id: '1',
     name: 'Adyatan Dagar',
     image: ady,
-    lastMessage: 'the texting feature is pretty cool',
+    lastMessage: 'How do you like roommer so far?',
     timestamp: '10:30 AM',
-    unread: 0,
-  },
-  {
-    id: '2',
-    name: 'Anthony Martini',
-    image: t,
-    lastMessage: 'Welcome to roommer Jvalaj!',
-    timestamp: 'Yesterday',
     unread: 0,
   }
 ];

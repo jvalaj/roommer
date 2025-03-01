@@ -19,6 +19,11 @@ const SAMPLE_MESSAGES = [
     text: 'Hey! Nice to meet you. I was impressed by your profile. What are you looking for in a roommate?',
     sender: 'me',
     timestamp: '10:32 AM',
+  },{
+    id: '1',
+    text: 'How do you like roommer so far?',
+    sender: 'other',
+    timestamp: '10:30 AM',
   }
 ];
 
