@@ -12,7 +12,7 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
 
 ---
 
-## echnologies Used
+## technologies Used
 
 - Frontend: React Native (via Expo)
 - Backend: Firebase
@@ -20,15 +20,22 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
 
 ---
 
-## 📸 Screenshots
+## screenshots
 
-![Home Screen](./assets/IMG_2742.PNG)
-![Home Screen](./assets/IMG_2743.PNG)
-![Home Screen](./assets/IMG_2744.PNG)
-![Home Screen](./assets/IMG_2745.PNG)
-![Home Screen](./assets/IMG_2746.PNG)
-![Home Screen](./assets/IMG_2747.PNG)
-![Home Screen](./assets/IMG_2748.PNG)
+<p align="center">
+    <img src="./assets/IMG_2742.PNG" width="30%" />
+    <img src="./assets/IMG_2743.PNG" width="30%" />
+    <img src="./assets/IMG_2744.PNG" width="30%" />
+</p>
+<p align="center">
+    <img src="./assets/IMG_2745.PNG" width="30%" />
+    <img src="./assets/IMG_2746.PNG" width="30%" />
+    <img src="./assets/IMG_2747.PNG" width="30%" />
+</p>
+<p align="center">
+    <img src="./assets/IMG_2748.PNG" width="30%" />
+</p>
+
 
 ## installation & Run
 
@@ -41,7 +48,7 @@ npm run build:web
 
 have expo go installed and scan the qr code shown in the terminal
 
-## 📬 Contact
+## contact
 
 Made with ❤️ by Jvalaj.  
 [LinkedIn](https://www.linkedin.com/in/jvalaj/)
