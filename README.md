@@ -31,8 +31,9 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
 </p>
 <p align="center">
     <img src="./assets/IMG_2743.PNG" width="30%" />
+    <img src="./assets/chat.jpeg" width="30%" />
     <img src="./assets/IMG_2744.PNG" width="30%" />
-    <img src="./assets/IMG_2742.PNG" width="30%" />
+    
 </p>
 
 
