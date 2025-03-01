@@ -29,6 +29,8 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
     
     
 </p>
+
+---
 <p align="center">
     <img src="./assets/IMG_2743.PNG" width="30%" />
     <img src="./assets/chat.jpeg" width="30%" />
@@ -36,20 +38,18 @@ Roommer is a swipe-based app designed to make finding the perfect college roomma
     
 </p>
 
-
+---
 
 ## installation & Run
-
--git clone https://github.com/yourusername/roommer.git
--cd roommer
-
--npm install
--npm expo start
--npm run build:web
-
--have expo go installed
--scan the qr code shown in the terminal
-
+```
+- git clone https://github.com/yourusername/roommer.git
+- cd roommer
+- npm install
+- npm expo start
+- npm run build:web
+- have expo go installed
+- scan the qr code shown in the terminal
+```
 ## contact
 
 Made with ❤️ by Jvalaj.  
