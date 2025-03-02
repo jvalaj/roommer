@@ -66,26 +66,6 @@ export default function MatchesScreen() {
     </TouchableOpacity>
   );
 
-  const renderPendingMatchItem = ({ item }: { item: any }) => (
-    <TouchableOpacity style={styles.pendingMatchItem}>
-      <Image source={ item.image } style={styles.pendingMatchImage} />
-      <View style={styles.pendingMatchInfo}>
-        <Text style={styles.pendingMatchName}>{item.name}</Text>
-        <Text style={styles.pendingMatchDetails}>{item.major}</Text>
-        <View style={styles.pendingCompatibility}>
-          <Text style={styles.pendingCompatibilityText}>{item.compatibility}% Match</Text>
-        </View>
-      </View>
-      <View style={styles.pendingMatchActions}>
-        <TouchableOpacity style={[styles.pendingActionButton, styles.acceptButton]}>
-          <Text style={styles.acceptButtonText}>Accept</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.pendingActionButton, styles.declineButton]}>
-          <Text style={styles.declineButtonText}>Decline</Text>
-        </TouchableOpacity>
-      </View>
-    </TouchableOpacity>
-  );
 
   return (
     <View style={styles.container}>
